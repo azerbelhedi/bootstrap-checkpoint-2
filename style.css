@@ -1,0 +1,49 @@
+.title{
+    background-color: red ;
+}
+
+.title h1{ 
+    width : max-content ;
+    padding : 0 ;
+    margin : 0 ;
+    margin-left : auto ;
+    margin-right: auto ;
+}
+
+.technology{
+    background-color: green ;
+}
+
+.technology h3{
+    margin : 0 ;
+    padding : 0 ;
+    width : max-content ;
+    margin-left : auto ;
+    margin-right : auto ;
+}
+
+.technology-container{
+    margin : 0 ;
+    padding : 0 ;
+}
+
+.articles-container{
+    background-color : red ;
+}
+
+.courses-container{
+    background-color: blue ;
+}
+
+.skills-container{
+    background-color: yellow ;
+}
+
+.content div{
+    min-height : 230px ;
+}
+
+.course-box-container div{
+    margin : 10px ;
+    background-color : red ;
+}
