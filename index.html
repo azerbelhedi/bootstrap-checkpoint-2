@@ -14,31 +14,33 @@
 
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="content.css">
 </head>
 <body>
     <!-- xs sm md lg -->
     <div class="container-fluid">
-        <div class="row title">
-            <h1>Responsive Challenge</h1>
-        </div>
-
-
-        <div class="technologies row">
-            <div class = "technology-container col-md-4 col-sm-4">
-                <div class="technology">
-                    <h3>Web level 1 </h3>
-                </div>
+        <div class="header">
+            <div class="row title">
+                <h1>Responsive Challenge</h1>
             </div>
 
-            <div class = "technology-container col-md-4 col-sm-4">
-                <div class="technology">
-                    <h3>Web level 2 </h3>
+            <div class="technologies row">
+                <div class = "technology-container col-md-4 col-sm-4">
+                    <div class="technology">
+                        <h3>Web level 1 </h3>
+                    </div>
                 </div>
-            </div>
-
-            <div class = "technology-container col-md-4 col-sm-4">
-                <div class="technology">
-                    <h3>Web level 3 </h3>
+    
+                <div class = "technology-container col-md-4 col-sm-4">
+                    <div class="technology">
+                        <h3>Web level 2 </h3>
+                    </div>
+                </div>
+    
+                <div class = "technology-container col-md-4 col-sm-4">
+                    <div class="technology">
+                        <h3>Web level 3 </h3>
+                    </div>
                 </div>
             </div>
         </div>
@@ -48,41 +50,112 @@
             col-12 order-3
             col-sm-12 order-sm-3
             col-md-3 order-md-1">
-            1. Courses
-            <div class="row">
-                <div class = "course-box-container
-                    col-12
-                    col-sm-6
-                    col-md-12
-                ">
-                    <div>
-                        this is a course
+                <!--
+                <h3>Courses</h3>    
+                --> 
+                <div class="row">
+                    <div class = "course-box-container
+                        col-12
+                        col-sm-6
+                        col-md-12
+                    ">
+                        <div class = "course-title">
+                            Front-end Course
+                            <img src="https://cdn.wccftech.com/wp-content/uploads/2016/10/Front-End-Development-Bundle.jpg" alt="">
+                        </div>
+                        
+                    </div>
+                    <div class = "course-box-container
+                        col-12
+                        col-sm-6
+                        col-md-12
+                    ">
+                        <div class = "course-title">
+                            Back-end Course
+                            <img src="data:image/png;base64,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" alt="">
+                        </div>
                     </div>
                 </div>
-                <div class = "course-box-container
-                    col-12
-                    col-sm-6
-                    col-md-12
-                ">
-                    <div>
-                        this is a course
-                    </div>
-                </div>
-            </div>
             </div>
 
             <div class = "articles-container
             col-12 order-2
             col-sm-9 order-sm-1
             col-md-7 order-md-2">
-                2. Articles
+                <!-- <h3>Articles</h3> -->
+                <h4 class = "title" id = "level1">Web Level 1</h4>
+                <div class="article">
+                    <div class="img">
+                            <img src="https://cdn-images-1.medium.com/max/2600/1*l4xICbIIYlz1OTymWCoUTw.jpeg" alt="web picture">
+                    </div>
+                    <p>
+                        Web development is the work involved in developing a web site for the Internet 
+                        (World Wide Web) or an intranet (a private network).[1] Web development can range 
+                        from developing a simple single static page of plain text to complex web-based 
+                        internet applications (web apps), electronic businesses, and social network services. 
+                        A more comprehensive list of tasks to which web development commonly refers, may include web 
+                        engineering, web design, web content development, client liaison, client-side/server-side scripting, 
+                        web server and network security configuration, and e-commerce development.
+                    </p>
+                </div>
+                <hr>
+                <h4 class = "title" id = "level1">Web Level 2</h4>
+                <div class="article">
+                    <div class="img">
+                            <img src="https://facebook.github.io/create-react-app/img/logo-og.png" alt="web picture">
+                    </div>
+                    <p>
+                        React (also known as React.js or ReactJS) is a JavaScript library[3] for
+                        building user interfaces. It is maintained by Facebook and a
+                        community of individual developers and companies.[4][5][6]
+                        React can be used as a base in the development of single-page or
+                        mobile applications, as it is optimal for fetching rapidly changing data
+                        that needs to be recorded. However, fetching data is only the beginning
+                        of what happens on a web page, which is why complex React applications 
+                        usually require the use of additional libraries for state management,
+                        routing, and interaction with an API.
+                    </p>
+                </div>
+                <hr>
+                <h4 class = "title" id = "level1">Web Level 3</h4>
+                <div class="article">
+                    <div class="img">
+                            <img src="https://nodejs.org/static/images/logos/nodejs-new-pantone-black.png" alt="web picture">
+                    </div>
+                    <p>
+                        Node.js is an open-source, cross-platform JavaScript run-time environment that 
+                        executes JavaScript code outside of a browser. 
+                        Node.js lets developers use JavaScript to write command line tools and for server-side
+                        scripting—running scripts server-side to produce dynamic web page
+                        content before the page is sent to the user's web browser.
+                        Consequently, Node.js represents a "JavaScript everywhere" paradigm,[7] unifying web
+                        application development around a single programming language, rather than
+                        different languages for server- and client-side scripts. 
+                    </p>
+                </div>
+
             </div>
             
             <div class = "skills-container
             col-12 order-1 
             col-sm-3 order-sm-2
             col-md-2 order-md-3">
-                3. Skills
+                <div class="skill-item">
+                    <img src="http://www.syntaxxx.com/wp-content/uploads/2014/08/html5-logo-600-580x580.jpg" alt="">
+                </div>
+
+                <div class="skill-item">
+                    <img src="http://www.syntaxxx.com/wp-content/uploads/2014/08/html5-logo-600-580x580.jpg" alt="">
+                </div>
+
+                <div class="skill-item">
+                    <img src="http://www.syntaxxx.com/wp-content/uploads/2014/08/html5-logo-600-580x580.jpg" alt="">
+                </div>
+
+                <div class="skill-item">
+                    <img src="http://www.syntaxxx.com/wp-content/uploads/2014/08/html5-logo-600-580x580.jpg" alt="">
+                </div>
+
             </div>
         </div>
         

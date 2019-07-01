@@ -28,22 +28,23 @@
 }
 
 .articles-container{
-    background-color : red ;
+    background-color : white ;
 }
 
 .courses-container{
-    background-color: blue ;
+    background-color: whitesmoke ;
 }
 
 .skills-container{
-    background-color: yellow ;
+    height: min-content ;
 }
 
-.content div{
-    min-height : 230px ;
+
+.course-box-container{
+    margin-bottom: 5px ;
+
 }
 
 .course-box-container div{
     margin : 10px ;
-    background-color : red ;
 }
